@@ -15,11 +15,11 @@ class ClassCounter extends Component {
 
     render() { 
         return (  
-            <>
-            <h1>Count {this.state.count}</h1>
+            <div className='classcounter'>
+            <h1> CLASS COUNTER {this.state.count}</h1>
             <button onClick={this.Increment}>Increase count</button>
             <button onClick={this.Decrement}>Decrease count</button>
-            </>
+            </div>
         );
     }
 }

@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import './myStyles.css'
 
 function FunctionCounter() {
     const [count, setCount]=useState(0)
@@ -9,11 +10,11 @@ function FunctionCounter() {
         setCount(count-1)
     }
   return (
-    <>
-    <h1>COUNT {count}</h1>
+    <div className='functioncounter'>
+    <h1> FUNCTION COUNTER {count}</h1>
     <button onClick={increment}>Increase</button>
     <button onClick={Decrement}>Decrease</button>
-    </>
+    </div>
   )
 }
 
